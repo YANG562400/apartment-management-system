@@ -23,8 +23,8 @@ A web-based Apartment Management System built with PHP and MySQL featuring tenan
 ## Screenshots
 
 ![Dashboard](screenshots/dashboard.jpg)
-![Apartments](screenshots/apartments3.jpg)
-![Apartments](screenshots/apartments2.jpg)
+![Apartments](screenshots/apartment3.jpg)
+![Apartments](screenshots/apartment2.jpg)
 ![Tenants](screenshots/tenants.jpg)
 ![Payments](screenshots/payments.jpg)
 ![Maintenance](screenshots/maintenance.jpg)
