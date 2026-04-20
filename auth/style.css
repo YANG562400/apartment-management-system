@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --text: #f7fbff;
+  --muted: rgba(247, 251, 255, 0.76);
+  --card-bg: rgba(8, 29, 63, 0.84);
+  --card-border: rgba(255, 255, 255, 0.18);
+  --field-bg: rgba(255, 255, 255, 0.16);
+  --field-border: rgba(255, 255, 255, 0.24);
+  --accent: #f3c458;
+  --accent-strong: #ffe08a;
+  --shadow: 0 26px 70px rgba(0, 0, 0, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 24px 14px;
+  display: grid;
+  place-items: center;
+  color: var(--text);
+  background:
+    linear-gradient(rgba(3, 17, 41, 0.54), rgba(3, 17, 41, 0.72)),
+    url("https://i.pinimg.com/originals/d7/b9/0c/d7b90cc80898e8823455a127945719af.jpg") center/cover no-repeat fixed;
+}
+
+.auth-shell {
+  width: min(100%, 470px);
+}
+
+.wrapper {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 28px;
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+  padding: 28px 24px 24px;
+}
+
+.wrapper form {
+  display: block;
+}
+
+.auth-header {
+  margin-bottom: 24px;
+}
+
+.brand-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: var(--accent-strong);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.wrapper h1 {
+  margin: 0 0 8px;
+  font-size: 34px;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.lead {
+  margin: 0;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.message,
+.error {
+  margin-bottom: 18px;
+  padding: 13px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.message {
+  background: rgba(40, 167, 69, 0.14);
+  border: 1px solid rgba(40, 167, 69, 0.3);
+}
+
+.error {
+  background: rgba(220, 53, 69, 0.16);
+  border: 1px solid rgba(220, 53, 69, 0.3);
+}
+
+.input-box {
+  margin-bottom: 18px;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.input-shell {
+  position: relative;
+}
+
+.input-shell input,
+.input-shell select {
+  width: 100%;
+  min-height: 56px;
+  padding: 15px 50px 15px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--field-border);
+  background: var(--field-bg);
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.input-shell input::placeholder {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.input-shell select option {
+  color: #10233f;
+}
+
+.input-shell input:focus,
+.input-shell select:focus {
+  border-color: rgba(255, 224, 138, 0.95);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.input-shell i {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.password-row {
+  margin: 6px 0 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.password-row label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.password-row input[type="checkbox"] {
+  accent-color: var(--accent);
+}
+
+.action-group {
+  display: grid;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.btn,
+.btn-secondary {
+  width: 100%;
+  min-height: 54px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+  color: #112541;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(243, 196, 88, 0.24);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.message a {
+  color: var(--accent-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 520px) {
+  .wrapper {
+    padding: 24px 18px 20px;
+  }
+
+  .wrapper h1 {
+    font-size: 30px;
+  }
+}

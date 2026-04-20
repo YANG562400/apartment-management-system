@@ -1,0 +1,31 @@
+/* style.css for archived_buildings.php */
+
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 950px;
+}
+
+h2 {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.btn-success {
+    font-weight: 500;
+}
+
+.btn-back {
+    margin-top: 20px;
+}
+
+.alert {
+    margin-bottom: 20px;
+}
